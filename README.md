@@ -14,3 +14,5 @@ git checkout dev (changer de branch pour aller sur dev)
 coder tout
 git checkout master (aller sur la branche principale)
 git merge dev (ajouter dev dans master)
+
+utiliser git kraken si vous êtes noob
