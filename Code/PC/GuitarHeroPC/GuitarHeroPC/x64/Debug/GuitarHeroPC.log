@@ -1,0 +1,7 @@
+﻿  ComBluetooth.cpp
+C:\Users\remsc\Desktop\GIT\Projet-S2-P04\Code\PC\GuitarHeroPC\GuitarHeroPC\ComBluetooth.h(56,62): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+  (compiling source file 'ComBluetooth.cpp')
+  
+  GuitarHeroPC.vcxproj -> C:\Users\remsc\Desktop\GIT\Projet-S2-P04\Code\PC\GuitarHeroPC\x64\Debug\GuitarHeroPC.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

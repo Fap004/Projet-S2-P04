@@ -1,0 +1,4 @@
+# Fichiers Visual Studio
+.vs/
+*.ipch
+*.VC.db
