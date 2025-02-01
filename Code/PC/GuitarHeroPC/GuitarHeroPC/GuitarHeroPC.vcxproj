@@ -128,10 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ComBluetooth.cpp" />
+    <ClCompile Include="Gameplay.cpp" />
     <ClCompile Include="GuitarHeroPC.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ComBluetooth.h" />
+    <ClInclude Include="EtatActionneur.h" />
+    <ClInclude Include="Gameplay.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\Image\image\BackGround.jpg" />
@@ -139,6 +143,9 @@
   <ItemGroup>
     <Text Include="chanson1.txt" />
     <Text Include="joueur.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GuitarHeroPC.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
