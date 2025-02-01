@@ -128,14 +128,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ComBluetooth.cpp" />
+    <ClCompile Include="ComFilaire.cpp" />
     <ClCompile Include="Gameplay.cpp" />
-    <ClCompile Include="GuitarHeroPC.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="SerialPort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ComBluetooth.h" />
+    <ClInclude Include="ComFilaire.h" />
     <ClInclude Include="EtatActionneur.h" />
     <ClInclude Include="Gameplay.h" />
+    <ClInclude Include="json.hpp" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="SerialPort.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\Image\image\BackGround.jpg" />

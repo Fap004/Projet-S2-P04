@@ -4,30 +4,44 @@
 
 using namespace std;
 
-Gameplay::Gameplay(bool bluetooth, bool verbose, bool admin) {
-    this->bluetooth = bluetooth;
+Gameplay::Gameplay(string nomPort, bool bluetooth, bool verbose, bool admin) {
+    this->estBluetooth = bluetooth;
     this->verbose = verbose;
     this->admin = admin;
-    com = new ComBluetooth("COM3");
 
-    if (this->bluetooth) {
-        configBluetooth();
+    if (this->estBluetooth) {
+        configBluetooth(nomPort);
+    }
+    else {
+        configFilaire(nomPort);
     }
 }
 
 void Gameplay::loopGame() {
-    std::string message;
-    if (com->lireMessage(message)) {
-        std::cout << "Message reçu : " << message << std::endl;
+    if (estBluetooth) {
+        std::string message;
+        if (comBluetooth->lireMessage(message)) {
+            std::cout << "Message reçu : " << message << std::endl;
+        }
+    }
+    else {
+        std::cout << "loopGame";
     }
 
     Sleep(500);
     loopGame();
 }
 
-bool Gameplay::configBluetooth() {
-    if (com->ouvrirPort()) {
-        bool isOk = com->envoyerMessage("Hello HC-05!");
+bool Gameplay::configFilaire(std::string nomPort) {
+    comFilaire = new ComFilaire(nomPort);
+    return true;
+}
+
+bool Gameplay::configBluetooth(std::string nomPort) {
+    comBluetooth = new ComBluetooth(nomPort);
+
+    if (comBluetooth->ouvrirPort()) {
+        bool isOk = comBluetooth->envoyerMessage("Hello HC-05!");
         if (isOk) {
             if (verbose)
                 printf("message envoyé");
