@@ -2,8 +2,8 @@
 C:\Users\remsc\Desktop\GIT\Projet-S2-P04\Code\PC\GuitarHeroPC\GuitarHeroPC\ComBluetooth.h(59,62): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
   (compiling source file 'Gameplay.cpp')
   
-C:\Users\remsc\Desktop\GIT\Projet-S2-P04\Code\PC\GuitarHeroPC\GuitarHeroPC\ComFilaire.h(32,64): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\remsc\Desktop\GIT\Projet-S2-P04\Code\PC\GuitarHeroPC\GuitarHeroPC\ComFilaire.h(35,64): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
   (compiling source file 'Gameplay.cpp')
   
-C:\Users\remsc\Desktop\GIT\Projet-S2-P04\Code\PC\GuitarHeroPC\GuitarHeroPC\Gameplay.cpp(33,1): warning C4717: 'Gameplay::loopGame': recursive on all control paths, function will cause runtime stack overflow
+C:\Users\remsc\Desktop\GIT\Projet-S2-P04\Code\PC\GuitarHeroPC\GuitarHeroPC\Gameplay.cpp(36,1): warning C4717: 'Gameplay::loopGame': recursive on all control paths, function will cause runtime stack overflow
   GuitarHeroPC.vcxproj -> C:\Users\remsc\Desktop\GIT\Projet-S2-P04\Code\PC\GuitarHeroPC\x64\Debug\GuitarHeroPC.exe

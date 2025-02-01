@@ -25,9 +25,11 @@ void Gameplay::loopGame() {
         }
     }
     else {
-        std::cout << "loopGame";
+        std::string message;
+        if (comFilaire->recevoirMessage(message)) {
+            interpreterMsg(message);
+        }
     }
-
     Sleep(500);
     loopGame();
 }
@@ -35,6 +37,18 @@ void Gameplay::loopGame() {
 bool Gameplay::configFilaire(std::string nomPort) {
     comFilaire = new ComFilaire(nomPort);
     return true;
+}
+
+void Gameplay::interpreterMsg(string msg) {
+    json j = json::parse(msg);
+    for (auto it = j.begin(); it != j.end(); ++it) {
+        if (it.key() == "message") {
+            std::cout << it.value() << std::endl;
+        }
+        if (it.key() == "bouton1" && it.value() == "released") {
+            std::cout << "note rouge appuyé" << std::endl;
+        }
+    }
 }
 
 bool Gameplay::configBluetooth(std::string nomPort) {

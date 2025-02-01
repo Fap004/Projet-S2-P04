@@ -11,6 +11,7 @@ class Gameplay
 		void loopGame();
 		bool configBluetooth(std::string nomPort);
 		bool configFilaire(std::string nomPort);
+		void interpreterMsg(std::string);
 
 	private:
 		ComBluetooth* comBluetooth;

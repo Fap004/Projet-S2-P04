@@ -21,6 +21,9 @@ public:
         if (!arduino->isConnected()) {
             throw std::runtime_error("Impossible de se connecter au port " + port);
         }
+        else {
+            std::cout << "Connection réussite port: " << port << std::endl;
+        }
     }
 
     ~ComFilaire() {
@@ -37,7 +40,13 @@ public:
         int bufferSize = arduino->readSerialPort(charBuffer, msgMaxSize);
         if (bufferSize > 0) {
             msg.assign(charBuffer, bufferSize);
-            return true;
+
+            // Vérifier si on a reçu une ligne complète
+            size_t pos = msg.find('\n');
+            if (pos != std::string::npos) {
+                msg = msg.substr(0, pos);  // Supprime tout après le '\n'
+                return true;
+            }
         }
         return false;
     }
