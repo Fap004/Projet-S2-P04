@@ -1,3 +1,4 @@
+#pragma once
 #include "ComFichierTexte.h"
 
 Joueur* ComFichierTexte::setJoueur(std::string nom)

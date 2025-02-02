@@ -11,7 +11,7 @@ public:
 
 	//meilleur score et score actuel. Avec fct qui permet de faire une valeur += pour améliorer la valeur actuel lors de la partie
 public:
-	Joueur(std::string nom = " ", std::string image = "DefaultJoueur.png", int MeilleurScore = 0, int score = 0);
+	Joueur(std::string nom, int MeilleurScore = 0, std::string image = "DefaultJoueur.png", int score = 0);
 	~Joueur();
 
 	//fct modifier nom lorsqu'on est dans la page Joueur ( avec les infos du joueur )

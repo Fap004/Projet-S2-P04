@@ -128,19 +128,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ComBluetooth.cpp" />
+    <ClCompile Include="ComFichierTexte.cpp" />
     <ClCompile Include="ComFilaire.cpp" />
     <ClCompile Include="Gameplay.cpp" />
-    <ClCompile Include="Joueur.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SerialPort.cpp" />
+    <ClCompile Include="Joueur.cpp" />
+    <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ComBluetooth.h" />
+    <ClInclude Include="ComFichierTexte.h" />
     <ClInclude Include="ComFilaire.h" />
+    <ClInclude Include="Enum.h" />
     <ClInclude Include="EtatActionneur.h" />
     <ClInclude Include="Gameplay.h" />
-    <ClInclude Include="Joueur.h" />
     <ClInclude Include="json.hpp" />
+    <ClInclude Include="Note.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SerialPort.h" />
   </ItemGroup>

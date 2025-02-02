@@ -1,6 +1,6 @@
 #include "Joueur.h"
 
-Joueur::Joueur(std::string nom, std::string image, int MeilleurScore, int score)
+Joueur::Joueur(std::string nom, int MeilleurScore, std::string image, int score)
 {
 	nomJoueur = nom;
 	Icone = image;
