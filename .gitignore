@@ -1,10 +1,12 @@
 # Fichiers Visual Studio
-.vs/
+*.vs/
 *.ipch
 *.VC.db
+*/x64/*
+*/Debug/*
 
 # Fichiers générés par Visual Studio
-.vscode/
+*.vscode/
 *.code-workspace
 *.suo
 *.user
