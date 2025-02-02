@@ -4,7 +4,7 @@
 *.VC.db
 */x64/*
 */Debug/*
-
+*.recipe
 # Fichiers générés par Visual Studio
 *.vscode/
 *.code-workspace
