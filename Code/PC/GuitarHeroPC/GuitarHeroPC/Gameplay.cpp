@@ -34,6 +34,13 @@ void Gameplay::loopGame() {
     loopGame();
 }
 
+void Gameplay::loopMenu() {
+    string nomJoueur = "";
+    cout << "nom du joueur";
+    cin >> nomJoueur;
+
+}
+
 bool Gameplay::configFilaire(std::string nomPort) {
     comFilaire = new ComFilaire(nomPort);
     return true;
