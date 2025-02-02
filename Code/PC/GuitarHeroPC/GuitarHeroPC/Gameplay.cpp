@@ -41,6 +41,7 @@ bool Gameplay::configFilaire(std::string nomPort) {
 
 void Gameplay::interpreterMsg(string msg) {
     json j = json::parse(msg);
+
     for (auto it = j.begin(); it != j.end(); ++it) {
         if (it.key() == "message") {
             std::cout << it.value() << std::endl;
