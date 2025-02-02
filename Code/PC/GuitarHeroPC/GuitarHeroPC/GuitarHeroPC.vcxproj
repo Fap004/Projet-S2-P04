@@ -134,6 +134,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SerialPort.cpp" />
     <ClCompile Include="Joueur.cpp" />
+    <ClCompile Include="tests.cpp" />
     <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -147,6 +148,7 @@
     <ClInclude Include="Note.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SerialPort.h" />
+    <ClInclude Include="tests.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\Image\image\BackGround.jpg" />
