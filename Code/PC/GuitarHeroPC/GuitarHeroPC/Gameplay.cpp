@@ -36,9 +36,24 @@ void Gameplay::loopGame() {
 
 void Gameplay::loopMenu() {
     string nomJoueur = "";
+    char voirScore;
     cout << "nom du joueur";
     cin >> nomJoueur;
+    cout << "voulez vous voir les meilleurs score (O/N)";
+    cin >> voirScore;
+    if (voirScore == 'O') {
+        voirMeilleurScore();
+    }
 
+    cout << "Choisir chanson: \n\t\t1) Beatles\n\t\t2) Intrégration";
+
+}
+
+void Gameplay::voirMeilleurScore() {
+    string attente;
+    cout << "Meilleur score: ";
+
+    cin >> attente;
 }
 
 bool Gameplay::configFilaire(std::string nomPort) {

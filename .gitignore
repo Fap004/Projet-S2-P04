@@ -2,3 +2,60 @@
 .vs/
 *.ipch
 *.VC.db
+
+# Fichiers générés par Visual Studio
+.vscode/
+*.code-workspace
+*.suo
+*.user
+*.cache
+*.ilk
+*.pdb
+*.log
+*.exp
+*.ipch
+*.tlog
+*.obj
+*.idb
+*.pch
+*.manifest
+*.iobj
+*.ipdb
+*.res
+*.VC.db
+*.VC.opendb
+*.vs/
+
+# Fichiers de compilation
+*.exe
+*.dll
+*.lib
+*.so
+*.a
+*.o
+
+# Fichiers temporaires et backups
+*.tmp
+*.log
+*.bak
+*.swp
+
+# CMake et Makefiles
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# PlatformIO (si tu l'utilises)
+.pio/
+.build/
+
+# Arduino
+*.elf
+*.hex
+*.bin
+
+# Node.js (si jamais tu utilises des scripts en JS)
+node_modules/
+package-lock.json
+yarn.lock
