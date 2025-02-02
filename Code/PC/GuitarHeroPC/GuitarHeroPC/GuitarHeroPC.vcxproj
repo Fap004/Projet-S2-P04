@@ -130,6 +130,7 @@
     <ClCompile Include="ComBluetooth.cpp" />
     <ClCompile Include="ComFilaire.cpp" />
     <ClCompile Include="Gameplay.cpp" />
+    <ClCompile Include="Joueur.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SerialPort.cpp" />
   </ItemGroup>
@@ -138,6 +139,7 @@
     <ClInclude Include="ComFilaire.h" />
     <ClInclude Include="EtatActionneur.h" />
     <ClInclude Include="Gameplay.h" />
+    <ClInclude Include="Joueur.h" />
     <ClInclude Include="json.hpp" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SerialPort.h" />
