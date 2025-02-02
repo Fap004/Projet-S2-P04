@@ -5,6 +5,8 @@
 */x64/*
 */Debug/*
 *.recipe
+*.filters
+*.vcxproj*
 # Fichiers générés par Visual Studio
 *.vscode/
 *.code-workspace
