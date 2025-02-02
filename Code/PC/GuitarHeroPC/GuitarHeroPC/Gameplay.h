@@ -10,6 +10,8 @@ class Gameplay
 		Gameplay(std::string comPort="COM5", bool bluetooth = true, bool verbose = false, bool admin = false);
 		void loopGame();
 		void loopMenu();
+
+		void voirMeilleurScore();
 		
 		bool configBluetooth(std::string nomPort);
 		bool configFilaire(std::string nomPort);
